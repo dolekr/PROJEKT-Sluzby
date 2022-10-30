@@ -1,3 +1,155 @@
 /* nejsme vcerejsi, pouzivame moderni box model */
 *, :after, :before { box-sizing: border-box; }
+ 
 
+/* ------------------------styly napříč stránkou------------------------ */
+body {
+    padding: 0 20px;
+    margin: 0;
+    background-color: #FAFAFA;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+    margin: 10px 0;
+    color: #000000;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 21px;
+    font-weight: 500;
+    text-align: center;
+    color: #000000;
+    margin: 60px 0px 15px 0px;
+}
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    color: #8B8B8B;
+    margin: 0;
+}
+
+section {
+    padding: 0;
+    margin: 0;
+}
+
+/* ------------------------header------------------------ */
+.header-kontejner {
+    display: flex;
+}
+
+.header-img {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+    padding: 60px 75px 40px 75px;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+/* ------------------------sekce úvod------------------------ */
+.sekce-uvod {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carka {
+    display: flex;
+    width: 60px;
+    height: 2px;
+    background-color: #407BFF;
+    margin-bottom: 30px;
+}
+
+.button-kontejner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.button-dobrodruzstvi,
+.button-plaz {
+    display: flex;
+    min-height: 40px;
+    background-color: #748f7c;
+    border-radius: 20px;
+}
+
+.button-dobrodruzstvi a,
+.button-plaz a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.button-dobrodruzstvi {
+    width: 195px;
+    background-color: #407BFF;
+    padding: 10px 30px;
+    margin: 0 0 10px 0;
+}
+
+.button-plaz {
+    min-width: 220px;
+    background-color: #8B8B8B;
+    padding: 10px 30px;
+
+}
+/* ------------------------sekce služby kanceláře------------------------ */
+.obdelnik-kontejner {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.obdelnik {
+    display: flex;
+    min-height: 80px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px #407BFF1F;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex: 1 1 auto;
+    margin-bottom: 15px;
+
+}
+
+.obdelnik-img {
+    display: flex;
+    min-width: 40px;
+    min-height: 45px;
+    padding: 20px;
+}
+
+.obdelnik-text {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.obdelnik-text p {
+    text-align: left;
+    padding: 30px 20px;
+}
+/* ------------------------sekce služby na místě------------------------ */
+.sekce-misto {
+    padding-bottom: 60px;
+}
